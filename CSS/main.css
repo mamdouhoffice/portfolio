@@ -74,10 +74,10 @@ a {
     z-index: 10;
 }
 .head-line::before {
-    left: -16%;
+    left: -25px;
 }
 .head-line::after {
-    right: -16%;
+    right: -25px;
 }
 .head-line:hover {
     color: var(--alt-color);
@@ -413,7 +413,7 @@ header nav input.menu {
     }
 
     .overview .info .title {
-        font-size: 25px;
+        font-size: 22px;
     }
     .overview .info .icons {
         font-size: 33px;
@@ -462,12 +462,6 @@ header nav input.menu {
 
     .head-line {
         font-size: 10px;
-    }
-    .head-line::before {
-        left: -30%;
-    }
-    .head-line::after {
-        right: -30%;
     }
 
     .toggle {
@@ -712,7 +706,6 @@ header nav input.menu {
 
 .skill .content .box h2 {
     color: var(--light);
-    margin: 10px 0;
 }
 .skill .content .box p {
     color: gray;
@@ -973,9 +966,18 @@ header nav input.menu {
     border-bottom: 3px solid var(--alt-color);
     color: var(--alt-color);
 }
-.contact-me .right form input:nth-child(4) {
+.contact-me .right form textarea {
+    resize: none;
     height: 100px;
+    margin: 10px auto;
+    width: 100%;
+    display: block;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 3px solid var(--alt-color);
+    color: var(--alt-color);
 }
+
 .contact-me .right form input:last-child {
     border: 1px transparent;
 }
@@ -983,7 +985,8 @@ header nav input.menu {
     border: 1px solid var(--alt-color);
 }
 
-.contact-me .right form input:focus {
+.contact-me .right form input:focus,
+.contact-me .right form textarea:focus-visible {
     outline: none;
 }
 

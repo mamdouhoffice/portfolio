@@ -5,8 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Portfolio | Mamdouh</title>
         <link rel="icon" href="imag/icon.png" />
+
+        <!-- ================ ASo style file =============== -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet" />
+        <!-- ================ Main Css file ======== -->
         <link rel="stylesheet" href="CSS/main.css" />
-        <!-- ====== Google Font ====== -->
+        <!-- ===================== Google Font ===================== -->
         <!-- ======= Main font ===== -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,7 +72,7 @@
 
             <!-- Start Overview -->
             <div class="overview">
-                <div class="info">
+                <div class="info" data-aos="fade-right">
                     <div class="data">
                         <h1 class="hi">Hello,</h1>
                         <h1 class="name">Mamouh Abd Elaleem</h1>
@@ -106,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero">
+                <div class="hero" data-aos="fade-left">
                     <div class="img">
                         <i class="fa-solid fa-star-of-life"></i>
                         <img src="imag/hero.png" alt="" />
@@ -128,7 +134,7 @@
                 <h1>About</h1>
             </div>
             <div class="content">
-                <div class="left">
+                <div class="left" data-aos="zoom-in">
                     <div class="slider">
                         <span style="--i: 1"
                             ><img src="imag/about1.jpg" alt=""
@@ -147,7 +153,7 @@
                         /></span>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="zoom-in-up">
                     <h1>My Bio</h1>
                     <p>
                         <span>I am Mamdouh,</span> a student at faculty of
@@ -180,7 +186,7 @@
             <div class="head-line">
                 <h1>Skills</h1>
             </div>
-            <div class="content">
+            <div class="content" data-aos="zoom-in">
                 <div class="box">
                     <div class="icon">
                         <img src="imag/html.png" alt="" />
@@ -341,7 +347,7 @@
                 <h1>certifications</h1>
             </div>
             <div class="certifie">
-                <div class="outer">
+                <div class="outer" data-aos="fade-right">
                     <div class="certifi-slid">
                         <span style="--i: 1"
                             ><img src="imag/qualify1.jpeg" alt=""
@@ -372,7 +378,7 @@
             </div>
 
             <div class="contact-me">
-                <div class="left">
+                <div class="left" data-aos="fade-right">
                     <div class="line">
                         <i class="fa-solid fa-map-location-dot"></i>
                         <div class="data">Egypt, Suhaj</div>
@@ -432,11 +438,11 @@
                             placeholder="Your Email"
                             name=""
                             id="" />
-                        <input
-                            type="text"
-                            placeholder="Message"
-                            name="Massage"
-                            id="" />
+
+                        <textarea
+                            name=""
+                            id=""
+                            placeholder="Message"></textarea>
 
                         <input type="submit" value="Send" class="btn" />
                     </form>
@@ -462,6 +468,11 @@
 
         <!-- ----- TYPING JS Link ----- -->
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- ------- ASO file -------- -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <!-- Main JavaScript File  -->
         <script src="js/master.js"></script>
     </body>
