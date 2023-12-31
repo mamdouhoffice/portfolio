@@ -870,7 +870,9 @@ header nav input.menu {
     object-fit: cover;
     transition: 2s;
 }
-
+.certification .certifi-slid span:hover img {
+    scale: 1.5;
+}
 @media (max-width: 500px) {
     .certification .certifi-slid {
         width: 200px;
